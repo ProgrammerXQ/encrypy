@@ -1,0 +1,28 @@
+[[package]]
+category = "main"
+description = "A password attribute that stores hashes"
+name = "password"
+optional = false
+python-versions = "*"
+version = "0.2"
+
+[[package]]
+category = "main"
+description = "A cross-platform Python module for entering passwords to a stdio terminal and displaying a **** mask, which getpass cannot do."
+name = "stdiomask"
+optional = false
+python-versions = "*"
+version = "0.0.6"
+
+[metadata]
+content-hash = "ff160b23264d8c67ce49468ea467d8756c69f18f0850fe0ee7ad973a8ba99752"
+python-versions = "^3.8"
+
+[metadata.files]
+password = [
+    {file = "password-0.2.tar.bz2", hash = "sha256:9ad8ed238c0c3f929778bc82237ecfd333a1b7357b5864bce7d7b5cd2b039b19"},
+    {file = "password-0.2.zip", hash = "sha256:c1502353c1c5c0541c0625b4f71255eb1b06e72b8146963a08ea3aa340c0bf53"},
+]
+stdiomask = [
+    {file = "stdiomask-0.0.6.tar.gz", hash = "sha256:c1e47069ead9e10bda150a26f7922ca01d2adc503042a9d7acf64877a2b9a3a6"},
+]
