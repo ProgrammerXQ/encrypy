@@ -1,4 +1,4 @@
-def password(prompt="Password: ", mask="*"):
+def hidden_input(prompt="Password: ", mask="*"):
   import stdiomask as passwd
   import base64
   password_ = passwd.getpass(prompt, mask)
@@ -12,7 +12,9 @@ def decode(encoded):
   passwd = base64.b64decode(encoded)
   passwd = base64.b64decode(passwd)
   return passwd.decode("utf-8")
-passwd = password()
-print(passwd)
-print("decoded")
-print(decode(passwd))
+def encode(raw_text):
+  import base64
+  raw_text = raw_text.encode("utf-8")
+  encoded = base64.b64encode(raw_text)
+  encoded = base64.b64encode(encoded)
+  return encoded.decode("utf-8")
